@@ -1,0 +1,342 @@
+/* Шапка */
+header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-family: 'IBM Plex Mono', monospace;
+	display: flex;
+	color: #4520AB;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 52px;
+	position: absolute;
+	top: 44px;
+}
+
+/*Главное тело */
+
+main {
+	display: flex;
+	margin-top: 182px;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Поле ввода */
+
+.mainInput {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	width: 500px;
+	height: 56px;
+	background-color: white;
+	border-radius: 14px;
+	border: 2px solid black;
+}
+
+input {
+	position: absolute;
+	left: 11px;
+	font-family: 'IBM Plex Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: -0.05em;
+	outline: none;
+	border-style: none;
+}
+
+#btn1 {
+	width: 107px;
+	height: 38.08px;
+	position: absolute;
+	background: #111111;
+	border-radius: 8px;
+	padding: 0px 12px 5px;
+	right: 8px;
+	font-family: 'IBM Plex Mono', monospace;
+	color: white;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: -0.03em;
+
+}
+
+/* Секция вывода */
+.section2 {
+	display: flex;
+	flex-direction: row;
+	width: 500px;
+	margin-top: 60px;
+}
+
+.leftC {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+}
+
+.rightC {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: relative;
+}
+
+.leftTop,
+.leftBottom,
+.leftMid,
+.rightBottom,
+.rightMid,
+.rightTop {
+	display: flex;
+	align-items: center;
+	min-width: 250px;
+	flex-direction: row;
+	height: 40px;
+	position: relative;
+	border: 1px solid;
+	border-top: none;
+}
+
+.rightMid,
+.rightBottom,
+.rightTop {
+	background: #d8d8d8;
+}
+
+.leftTop,
+.leftBottom,
+.leftMid {
+	background: #F0F0F0;
+
+}
+
+/* Левый столбец */
+
+.leftTop {
+	border-radius: 8px 0 0 0;
+	border-color: white black black white;
+	border-left: none;
+}
+
+.leftMid {
+	border-color: white black black white;
+	border-left: none;
+}
+
+.leftBottom {
+	border-color: white black white white;
+	border-radius: 0 0 0 8px;
+	border-left: none;
+	border-bottom: none;
+
+}
+
+.num,
+.ruText,
+.enText,
+.delText {
+	font-family: 'IBM Plex Mono', monospace;
+	position: absolute;
+}
+
+.ruText,
+.enText {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.num {
+	left: 12px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.ruText {
+	left: 49px;
+}
+
+/* Правыый столбец */
+
+.enText {
+	left: 28px;
+}
+
+.delBtn {
+	position: absolute;
+	right: 11px;
+}
+
+.btn2 {}
+
+.rightTop {
+	width: 250px;
+	height: 40px;
+	border-radius: 0 8px 0 0;
+	border: 1px solid;
+	border-color: white white black black;
+	border-top: none;
+	border-right: none;
+}
+
+.rightMid {
+	border-color: white white black black;
+	border-top: none;
+	border-right: none;
+
+}
+
+.rightBottom {
+	border-color: white white white black;
+	border-radius: 0 0 8px 0;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+
+}
+
+/* Всплывающее окно */
+
+.popupLeft, .popupRight {
+	display: none;
+	padding: 8px 16px 10px;
+	gap: 10px;
+	background-color: white;
+	border-radius: 10px;
+	position: absolute;
+	top: 6px;
+	left: 34px;
+	font-family: 'IBM Plex Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	word-break: break-all;
+	z-index: 1;
+}
+
+.popupRight, .popupLeft {
+	width: 150px;
+}
+
+.leftMid:hover .popupLeft {
+	display: block;
+}
+
+.rightMid:hover .popupRight {
+	display: block;
+}
+
+/* Кнопка очистить */
+
+.section3 {
+	margin-top: 60px;
+}
+
+.mainDelBtn {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	width: 176px;
+	height: 38px;
+	background-color: #ADADAD;
+	border-radius: 8px;
+}
+
+.delBtn2 {
+	position: absolute;
+	left: 10px;
+}
+
+.delText {
+	position: absolute;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: -0.05em;
+	right: 10px;
+
+}
+
+/* Медиа */
+
+@media (max-width: 767px) {
+
+	h1 {
+			font-size: 36px;
+			line-height: 47px;
+			top: 20px;
+	}
+
+	main {
+			margin-top: 143px;
+	}
+
+	.mainInput {
+			width: 328px;
+	}
+
+	input {
+			font-size: 15px;
+			line-height: 20px;
+	}
+
+	.section2 {
+			width: 328px;
+			margin-top: 50px;
+	}
+
+	.leftC,
+	.rightC {
+			width: 172px;
+	}
+
+	.leftTop,
+	.leftBottom,
+	.leftMid,
+	.rightBottom,
+	.rightMid,
+	.rightTop {
+			width: 172px;
+			min-width: 172px;
+	}
+
+	.ruText {
+			left: 37px;
+	}
+
+	.enText {
+			left: 16px;
+	}
+
+	.delBtn {
+			right: 8px;
+	}
+
+	.section3 {
+			margin-top: 40px;
+	}
+
+	.popupLeft, .popupRight {
+			width: 120px;
+	}
+
+	.popupRight {
+			left: -20px;
+	}
+
+}
